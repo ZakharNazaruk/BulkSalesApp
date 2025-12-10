@@ -1,0 +1,130 @@
+diff --git a/.git/HEAD b/.git/HEAD
+deleted file mode 100644
+diff --git a/.git/info/refs b/.git/info/refs
+deleted file mode 100644
+diff --git a/.git/info/exclude b/.git/info/exclude
+deleted file mode 100644
+diff --git a/.git/logs/HEAD b/.git/logs/HEAD
+deleted file mode 100644
+diff --git a/.git/logs/refs/heads/main b/.git/logs/refs/heads/main
+deleted file mode 100644
+diff --git a/.git/logs/refs/remotes/origin/main b/.git/logs/refs/remotes/origin/main
+deleted file mode 100644
+diff --git a/.git/refs/heads/main b/.git/refs/heads/main
+deleted file mode 100644
+diff --git a/.git/refs/remotes/origin/main b/.git/refs/remotes/origin/main
+deleted file mode 100644
+diff --git a/.git/hooks/update.sample b/.git/hooks/update.sample
+deleted file mode 100644
+diff --git a/.git/hooks/pre-push.sample b/.git/hooks/pre-push.sample
+deleted file mode 100644
+diff --git a/.git/hooks/commit-msg.sample b/.git/hooks/commit-msg.sample
+deleted file mode 100644
+diff --git a/.git/hooks/pre-commit.sample b/.git/hooks/pre-commit.sample
+deleted file mode 100644
+diff --git a/.git/hooks/pre-rebase.sample b/.git/hooks/pre-rebase.sample
+deleted file mode 100644
+diff --git a/.git/hooks/post-update.sample b/.git/hooks/post-update.sample
+deleted file mode 100644
+diff --git a/.git/hooks/pre-receive.sample b/.git/hooks/pre-receive.sample
+deleted file mode 100644
+diff --git a/.git/hooks/applypatch-msg.sample b/.git/hooks/applypatch-msg.sample
+deleted file mode 100644
+diff --git a/.git/hooks/pre-applypatch.sample b/.git/hooks/pre-applypatch.sample
+deleted file mode 100644
+diff --git a/.git/hooks/pre-merge-commit.sample b/.git/hooks/pre-merge-commit.sample
+deleted file mode 100644
+diff --git a/.git/hooks/push-to-checkout.sample b/.git/hooks/push-to-checkout.sample
+deleted file mode 100644
+diff --git a/.git/hooks/fsmonitor-watchman.sample b/.git/hooks/fsmonitor-watchman.sample
+deleted file mode 100644
+diff --git a/.git/hooks/prepare-commit-msg.sample b/.git/hooks/prepare-commit-msg.sample
+deleted file mode 100644
+diff --git a/.git/hooks/sendemail-validate.sample b/.git/hooks/sendemail-validate.sample
+deleted file mode 100644
+diff --git a/.git/index b/.git/index
+deleted file mode 100644
+diff --git a/.git/config b/.git/config
+deleted file mode 100644
+diff --git a/.git/objects/info/packs b/.git/objects/info/packs
+deleted file mode 100644
+diff --git a/.git/objects/info/commit-graph b/.git/objects/info/commit-graph
+deleted file mode 100644
+diff --git a/.git/objects/pack/pack-fbca644a8c1ea52a66a94be0f6e8733cec23d51b.idx b/.git/objects/pack/pack-fbca644a8c1ea52a66a94be0f6e8733cec23d51b.idx
+deleted file mode 100644
+diff --git a/.git/objects/pack/pack-fbca644a8c1ea52a66a94be0f6e8733cec23d51b.rev b/.git/objects/pack/pack-fbca644a8c1ea52a66a94be0f6e8733cec23d51b.rev
+deleted file mode 100644
+diff --git a/.git/objects/pack/pack-fbca644a8c1ea52a66a94be0f6e8733cec23d51b.pack b/.git/objects/pack/pack-fbca644a8c1ea52a66a94be0f6e8733cec23d51b.pack
+deleted file mode 100644
+diff --git a/.git/description b/.git/description
+deleted file mode 100644
+diff --git a/.git/packed-refs b/.git/packed-refs
+deleted file mode 100644
+diff --git a/.git/COMMIT_EDITMSG b/.git/COMMIT_EDITMSG
+deleted file mode 100644
+diff --git a/target/BulkSales-0.0.1-SNAPSHOT.jar b/target/BulkSales-0.0.1-SNAPSHOT.jar
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git a/uploads/banners/1763137692191_____.jpg b/uploads/banners/1763137692191_____.jpg
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git a/uploads/1759766192199_5.jpg b/uploads/1759766192199_5.jpg
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git a/uploads/1759766940935_5.jpg b/uploads/1759766940935_5.jpg
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git a/uploads/1759767417189_5.jpg b/uploads/1759767417189_5.jpg
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git a/uploads/1759767952211_5.jpg b/uploads/1759767952211_5.jpg
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git a/uploads/1759769011984_5.jpg b/uploads/1759769011984_5.jpg
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git a/uploads/1759770414142_5.jpg b/uploads/1759770414142_5.jpg
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git a/uploads/1759771804103_5.jpg b/uploads/1759771804103_5.jpg
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git a/uploads/1761313307614_____.jpg b/uploads/1761313307614_____.jpg
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git a/uploads/1761313344400_____.jpg b/uploads/1761313344400_____.jpg
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+GIT binary patch
+literal 0
+Hc$@<O00001
+

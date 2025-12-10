@@ -1,0 +1,3 @@
+[submodule "BulkSales/BulkSales"]
+	path = BulkSales/BulkSales
+	url = https://github.com/ZakharNazaruk/BulkSales2.git
