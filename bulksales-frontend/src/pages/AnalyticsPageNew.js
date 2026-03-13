@@ -297,9 +297,9 @@ function AnalyticsPageNew() {
               <div style={styles.metricsGrid}>
                 {/* Общая выручка */}
                 <div style={styles.metricCard}>
-                  <div style={{ ...styles.metricIcon, backgroundColor: 'var(--primary-light)', color: 'var(--primary)' }}>₽</div>
+                  <div style={{ ...styles.metricIcon, backgroundColor: 'var(--primary-light)', color: 'var(--primary)' }}>р</div>
                   <div>
-                    <div style={styles.metricValue}>{metrics.totalRevenue.toLocaleString('ru-RU')} ₽</div>
+                    <div style={styles.metricValue}>{metrics.totalRevenue.toLocaleString('ru-RU')} р</div>
                     <div style={styles.metricLabel}>Общая выручка</div>
                     <div style={styles.metricPeriod}>за {timeRange} дней</div>
                   </div>
@@ -317,7 +317,7 @@ function AnalyticsPageNew() {
                 <div style={styles.metricCard}>
                   <div style={{ ...styles.metricIcon, backgroundColor: 'var(--warning-light)', color: 'var(--warning)' }}>📊</div>
                   <div>
-                    <div style={styles.metricValue}>{metrics.avgOrderValue.toLocaleString('ru-RU')} ₽</div>
+                    <div style={styles.metricValue}>{metrics.avgOrderValue.toLocaleString('ru-RU')} р</div>
                     <div style={styles.metricLabel}>Средний чек</div>
                     <div style={styles.metricPeriod}>за {timeRange} дней</div>
                   </div>
@@ -341,7 +341,7 @@ function AnalyticsPageNew() {
                   dataKey="revenue"
                   color="var(--primary)"
                   timeRange={timeRange}
-                  formatValue={(v) => `${v.toLocaleString('ru-RU')} ₽`}
+                  formatValue={(v) => `${v.toLocaleString('ru-RU')} р`}
                   maKey="revenueMA"
                   maColor="var(--secondary)"
                   emaKey="revenueEMA"
@@ -381,10 +381,10 @@ function AnalyticsPageNew() {
                         </div>
                         <div style={styles.productMetrics}>
                           <div style={styles.productRevenue}>
-                            {!isNaN(item.revenue) ? item.revenue.toLocaleString('ru-RU') : '0'} ₽
+                            {!isNaN(item.revenue) ? item.revenue.toLocaleString('ru-RU') : '0'} р
                           </div>
                           <div style={styles.productPrice}>
-                            {item.product.price ? `${item.product.price} ₽` : 'Цена не указана'}
+                            {item.product.price ? `${item.product.price} р` : 'Цена не указана'}
                           </div>
                         </div>
                       </div>
@@ -401,7 +401,7 @@ function AnalyticsPageNew() {
                     <div style={styles.insightMetric}>
                       <span style={styles.insightLabel}>Выручка за период:</span>
                       <span style={styles.insightValue}>
-                        {!isNaN(metrics.totalRevenue) ? metrics.totalRevenue.toLocaleString('ru-RU') : '0'} ₽
+                        {!isNaN(metrics.totalRevenue) ? metrics.totalRevenue.toLocaleString('ru-RU') : '0'} р
                       </span>
                     </div>
                     <div style={styles.insightMetric}>
@@ -413,7 +413,7 @@ function AnalyticsPageNew() {
                     <div style={styles.insightMetric}>
                       <span style={styles.insightLabel}>Средний чек:</span>
                       <span style={styles.insightValue}>
-                        {!isNaN(metrics.avgOrderValue) ? metrics.avgOrderValue.toLocaleString('ru-RU') : '0'} ₽
+                        {!isNaN(metrics.avgOrderValue) ? metrics.avgOrderValue.toLocaleString('ru-RU') : '0'} р
                       </span>
                     </div>
                     <div style={styles.insightMetric}>

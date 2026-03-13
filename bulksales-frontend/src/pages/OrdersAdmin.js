@@ -81,7 +81,7 @@ function OrdersAdmin() {
                     <td style={styles.td}>{o.userEmail || o.userId}</td>
                     <td style={styles.td}>{o.createdAt ?? ''}</td>
                     <td style={styles.td}><span style={{...styles.chip, background: (o.status||'')==='APPROVED'? '#d1fae5': (o.status||'')==='REJECTED'? '#fee2e2' : '#e0e7ff', color: '#111'}}>{o.status || 'PENDING_CONFIRMATION'}</span></td>
-                    <td style={{ ...styles.td, fontWeight: 700 }}>{o.totalPrice ?? ''}</td>
+                    <td style={{ ...styles.td, fontWeight: 700 }}>{o.totalPrice != null ? `${o.totalPrice} р` : ''}</td>
                     <td style={styles.td}>
                       <button style={styles.btn} onClick={()=>changeStatus(o.id, 'APPROVED')}>Одобрить</button>
                       <button style={{ ...styles.btn, background: '#FF6B6B' }} onClick={()=>changeStatus(o.id, 'REJECTED')}>Отклонить</button>

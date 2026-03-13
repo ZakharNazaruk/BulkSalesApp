@@ -1292,7 +1292,7 @@ const load = async () => {
                         <div style={{ display: 'flex', gap: '1rem', fontSize: '0.75rem' }}>
                           {p.price && (
                             <div style={{ color: '#059669', fontWeight: 600 }}>
-                              ${p.price}
+                              {p.price} р
                             </div>
                           )}
                           {p.category && (
@@ -1875,7 +1875,7 @@ function ShelfEditorModal({ activeShelf, cells, setCells, products, productsById
                       {p.name}
                     </div>
                     {p.price && (
-                      <div style={{ fontSize: '0.75rem', color: '#059669' }}>${p.price}</div>
+                      <div style={{ fontSize: '0.75rem', color: '#059669' }}>{p.price} р</div>
                     )}
                   </div>
                 </div>
@@ -2054,7 +2054,7 @@ function ShelfCell({ cell, index, productsById, topProductIds, allProductsCount,
               borderRadius: '6px',
               border: `1px solid ${popularityColor}30`
             }}>
-              ${product.price}
+              {product.price} р
             </div>
           )}
 

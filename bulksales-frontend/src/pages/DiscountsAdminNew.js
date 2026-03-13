@@ -419,7 +419,7 @@ const filteredDiscounts = useMemo(() => {
               <div style={styles.vipInfoText}>
                 <h4 style={styles.vipInfoTitle}>Автоматическая VIP скидка</h4>
                 <p style={styles.vipInfoDescription}>
-                  При сумме заказа от <strong>${vipSettings.vipThreshold}</strong> клиенты получают автоматическую скидку <strong>{vipSettings.vipDiscountPercent}%</strong>
+                  При сумме заказа от <strong>{vipSettings.vipThreshold} р</strong> клиенты получают автоматическую скидку <strong>{vipSettings.vipDiscountPercent}%</strong>
                 </p>
               </div>
               <button
@@ -639,7 +639,7 @@ const filteredDiscounts = useMemo(() => {
                       <td style={styles.conditions}>
                         {discount.minOrderAmount && (
                           <div style={styles.conditionItem}>
-                            <strong>От:</strong> ${discount.minOrderAmount}
+                            <strong>От:</strong> {discount.minOrderAmount} р
                           </div>
                         )}
                         {discount.isVip && (
@@ -759,7 +759,7 @@ const filteredDiscounts = useMemo(() => {
               </div>
 
               <div className="form-group">
-                <label className="form-label">Минимальная сумма заказа для VIP скидки ($)</label>
+                <label className="form-label">Минимальная сумма заказа для VIP скидки (р)</label>
                 <input
                   type="number"
                   className="form-input"
@@ -800,11 +800,11 @@ const filteredDiscounts = useMemo(() => {
               <div style={styles.vipSettingsPreview}>
                 <h4>Пример применения:</h4>
                 <p>
-                  При сумме заказа <strong>${vipSettings.vipThreshold}</strong> VIP клиент получит скидку <strong>{vipSettings.vipDiscountPercent}%</strong>
+                  При сумме заказа <strong>{vipSettings.vipThreshold} р</strong> VIP клиент получит скидку <strong>{vipSettings.vipDiscountPercent}%</strong>
                 </p>
                 {vipSettings.vipThreshold > 0 && vipSettings.vipDiscountPercent > 0 && (
                   <p style={styles.vipSettingsExample}>
-                    Заказ на $500: скидка ${(500 * vipSettings.vipDiscountPercent / 100).toFixed(2)} → итого ${(500 * (1 - vipSettings.vipDiscountPercent / 100)).toFixed(2)}
+                    Заказ на 500 р: скидка {(500 * vipSettings.vipDiscountPercent / 100).toFixed(2)} р → итого {(500 * (1 - vipSettings.vipDiscountPercent / 100)).toFixed(2)} р
                   </p>
                 )}
               </div>
@@ -1026,7 +1026,7 @@ const filteredDiscounts = useMemo(() => {
                     <option value="">Выберите товар...</option>
                     {products.map(product => (
                       <option key={product.id} value={product.id}>
-                        {product.name} - ${product.price}
+                        {product.name} - {product.price} р
                       </option>
                     ))}
                   </select>

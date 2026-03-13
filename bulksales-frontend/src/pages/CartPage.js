@@ -63,14 +63,14 @@ function CartPage() {
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                  <div style={{ fontWeight: 700 }}>{it.subtotal}</div>
+                  <div style={{ fontWeight: 700 }}>{it.subtotal} р</div>
                   <button style={{ ...styles.button, background: '#FF6B6B' }} onClick={() => remove(it.productId)}>Remove</button>
                 </div>
               </div>
             ))}
             <div style={{ ...styles.rowBetween, marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid #eee' }}>
               <div style={{ fontWeight: 700 }}>Total</div>
-              <div>{cart.totalPrice}</div>
+              <div>{cart.totalPrice} р</div>
             </div>
             <div style={{ marginTop: '1rem' }}>
               <button style={styles.button} onClick={()=>setConfirm(true)}>Checkout</button>
@@ -88,7 +88,7 @@ function CartPage() {
 {p.imageUrl && <img src={(p.imageUrl.startsWith('http')?p.imageUrl:(config.url.API_BASE_URL.replace(/\/$/, '') + p.imageUrl))} alt={p.name} style={{ width: 72, height: 72, objectFit: 'cover', borderRadius: 8 }} />}
                   <div>
                     <div style={{ fontWeight: 700 }}>{locale==='en' ? (p.nameEn || p.name) : p.name}</div>
-                    <div style={{ color: 'var(--muted)' }}>{p.discountedPrice ?? p.price}</div>
+                    <div style={{ color: 'var(--muted)' }}>{p.discountedPrice ?? p.price} р</div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.3rem' }}>
                       <button style={{ ...styles.button, padding: '0.2rem 0.5rem' }} onClick={() => setRecs(qs => qs.map(x => x.id === p.id ? { ...x, __qty: Math.max(1, (x.__qty||1)-1) } : x))}>-</button>
                       <span>{p.__qty || 1}</span>

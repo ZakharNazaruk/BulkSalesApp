@@ -26,7 +26,7 @@ function HomePage() {
   const [vipSettings, setVipSettings] = useState(null)
   const [productGroups, setProductGroups] = useState([])
   const [selectedGroups, setSelectedGroups] = useState([])
-  const [priceRange, setPriceRange] = useState([0, 10000])
+  const [priceRange, setPriceRange] = useState([0, 150000])
   const [showOnlyDiscounted, setShowOnlyDiscounted] = useState(false)
   const [showOnlyInStock, setShowOnlyInStock] = useState(true)
   const pageSize = 12
@@ -302,7 +302,7 @@ function HomePage() {
   // Сброс фильтров
   const resetFilters = () => {
     setSelectedGroups([])
-    setPriceRange([0, 10000])
+    setPriceRange([0, 150000])
     setShowOnlyDiscounted(false)
     setShowOnlyInStock(true)
     setQ('')
@@ -422,7 +422,7 @@ function HomePage() {
 
             {/* Цена */}
             <div style={styles.filterSection}>
-              <h4 style={styles.filterTitle}>Цена, ₽</h4>
+              <h4 style={styles.filterTitle}>Цена, р</h4>
               <div style={styles.priceRange}>
                 <div style={styles.priceInputs}>
                   <input
@@ -431,7 +431,7 @@ function HomePage() {
                     onChange={(e) => setPriceRange([Number(e.target.value), priceRange[1]])}
                     style={styles.priceInput}
                     min="0"
-                    max="100000"
+                    max="500000"
                   />
                   <span style={styles.priceSeparator}>-</span>
                   <input
@@ -440,11 +440,11 @@ function HomePage() {
                     onChange={(e) => setPriceRange([priceRange[0], Number(e.target.value)])}
                     style={styles.priceInput}
                     min="0"
-                    max="100000"
+                    max="500000"
                   />
                 </div>
                 <div style={styles.priceDisplay}>
-                  от {priceRange[0]} до {priceRange[1]} ₽
+                  от {priceRange[0]} до {priceRange[1]} р
                 </div>
               </div>
             </div>

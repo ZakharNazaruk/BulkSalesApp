@@ -72,11 +72,11 @@ function AnalyticsPage() {
           <div style={styles.summaryGrid}>
             <div style={styles.summaryCard}>
               <div style={styles.summaryLabel}>Выручка (сумма)</div>
-              <div style={styles.summaryValue}>{totalRevenue.toFixed ? totalRevenue.toFixed(2) : totalRevenue}</div>
+              <div style={styles.summaryValue}>{totalRevenue.toFixed ? totalRevenue.toFixed(2) : totalRevenue} р</div>
             </div>
             <div style={styles.summaryCard}>
               <div style={styles.summaryLabel}>Средний чек (AOV)</div>
-              <div style={styles.summaryValue}>{aov ?? '-'}</div>
+              <div style={styles.summaryValue}>{aov != null ? `${aov} р` : '-'}</div>
             </div>
             <div style={styles.summaryCard}>
               <div style={styles.summaryLabel}>Топ-товаров</div>
@@ -138,7 +138,7 @@ function AnalyticsPage() {
           <div style={styles.card}>
             <div style={{ textAlign: 'center' }}>
               <h3 style={{ marginTop: 0 }}>Средний чек (AOV)</h3>
-              <div style={{ fontSize: '2rem', fontWeight: 700 }}>{aov ?? '-'}</div>
+              <div style={{ fontSize: '2rem', fontWeight: 700 }}>{aov != null ? `${aov} р` : '-'}</div>
             </div>
           </div>
           <div style={styles.card}>

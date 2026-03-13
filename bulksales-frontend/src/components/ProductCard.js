@@ -56,10 +56,10 @@ function ProductCard({ product }) {
       <h3 style={{ color: 'var(--text)' }}>{locale==='en' ? (product.nameEn || product.name) : product.name}</h3>
       <div style={{ margin: '0.5rem 0' }}>
         <span style={{ color: 'var(--primary)', fontSize: '1.2rem', fontWeight: 'bold' }}>
-          ${(product.discountedPrice && Number(product.discountedPrice) < Number(product.price)) 
+          {(product.discountedPrice && Number(product.discountedPrice) < Number(product.price)) 
             ? Number(product.discountedPrice).toFixed(2)
             : Number(product.price).toFixed(2)
-          }
+          } р
         </span>
         {(product.discountedPrice && Number(product.discountedPrice) < Number(product.price)) && (
           <span style={{ 
@@ -68,7 +68,7 @@ function ProductCard({ product }) {
             marginLeft: '0.5rem',
             fontSize: '0.9rem'
           }}>
-            ${Number(product.price).toFixed(2)}
+            {Number(product.price).toFixed(2)} р
           </span>
         )}
         {(product.discountedPrice && Number(product.discountedPrice) < Number(product.price)) && (

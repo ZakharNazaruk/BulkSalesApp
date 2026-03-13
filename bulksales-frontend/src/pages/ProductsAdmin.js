@@ -164,7 +164,7 @@ function ProductsAdmin() {
                       <td style={styles.td}>{p.id}</td>
                       <td style={styles.td}>{p.name}</td>
                       <td style={styles.td}>{p.category}</td>
-                      <td style={styles.td}>{p.discountedPrice ?? p.price}</td>
+                      <td style={styles.td}>{p.discountedPrice ?? p.price} р</td>
                       <td style={styles.td}>{p.quantity ?? 0}</td>
                       <td style={styles.td}>{p.active ? 'ДА' : 'НЕТ'}</td>
                       <td style={styles.td}>{p.priority ? 'ДА' : 'НЕТ'}</td>

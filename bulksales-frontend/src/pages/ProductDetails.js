@@ -159,10 +159,8 @@ function ProductDetails() {
     }
   }
 
-  // Генерация изображений
-  const productImages = product?.imageUrl 
-    ? [product.imageUrl, product.imageUrl, product.imageUrl] // duplicates for demo
-    : []
+  // Одно изображение — без дублирования (убирает лишние плейсхолдеры)
+  const productImages = product?.imageUrl ? [product.imageUrl] : []
 
   if (loading) {
     return (
@@ -215,10 +213,10 @@ function ProductDetails() {
                 style={styles.mainImage}
                 onError={(e) => {
                   e.currentTarget.style.display = 'none'
-                  e.currentTarget.nextSibling.style.display = 'block'
+                  e.currentTarget.nextSibling.style.display = 'flex'
                 }}
               />
-              <div style={styles.imagePlaceholder}>
+              <div style={{ ...styles.imagePlaceholder, display: 'none' }}>
                 <span>📷</span>
                 <p>Изображение не найдено</p>
               </div>
@@ -269,9 +267,9 @@ function ProductDetails() {
             {/* Блок цен и скидок */}
             <div style={styles.priceSection}>
               <div style={styles.priceContainer}>
-                <span style={styles.currentPrice}>${bestPrice.toFixed(2)}</span>
+                <span style={styles.currentPrice}>{bestPrice.toFixed(2)} р</span>
                 {hasDiscount && (
-                  <span style={styles.originalPrice}>${basePrice.toFixed(2)}</span>
+                  <span style={styles.originalPrice}>{basePrice.toFixed(2)} р</span>
                 )}
               </div>
               
@@ -298,12 +296,12 @@ function ProductDetails() {
                         {discount.name || 'Скидка на товар'}
                       </span>
                       <span style={styles.discountValue}>-{discount.percent}%</span>
-                      <span style={styles.discountAmount}>-${discount.amount.toFixed(2)}</span>
+                      <span style={styles.discountAmount}>-{discount.amount.toFixed(2)} р</span>
                     </div>
                   ))}
                 </div>
                 <div style={styles.savingsTotal}>
-                  Ваша экономия: <strong>${(basePrice - bestPrice).toFixed(2)}</strong>
+                  Ваша экономия: <strong>{(basePrice - bestPrice).toFixed(2)} р</strong>
                 </div>
               </div>
             )}
@@ -355,7 +353,7 @@ function ProductDetails() {
                   ) : product.quantity <= 0 ? (
                     'Нет в наличии'
                   ) : (
-                    `Добавить в корзину — $${(bestPrice * qty).toFixed(2)}`
+                    `Добавить в корзину — ${(bestPrice * qty).toFixed(2)} р`
                   )}
                 </button>
               </div>
@@ -375,7 +373,7 @@ function ProductDetails() {
                 <div style={styles.detailItem}>
                   <span style={styles.detailLabel}>Итоговая экономия:</span>
                   <span style={styles.detailValueSavings}>
-                    ${(basePrice - bestPrice).toFixed(2)}
+                    {(basePrice - bestPrice).toFixed(2)} р
                   </span>
                 </div>
               )}
